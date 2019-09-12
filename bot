@@ -1,0 +1,45 @@
+clear
+cat <<EOF
+.
+▄███████████▄
+█████░▀██████
+█████░░░▀████
+█████░░░▄████
+█████░▄██████
+█████████████
+─▀▀▀▀▀▀▀▀▀▀▀─
+EOF
+RED='\033[0;31m'
+NC='\033[0m'
+echo -e " ${RED}YOUTUBE ${NC} VIEWS BOT"
+echo -e "MADE WITH ${RED}<3 ${NC} BY M0NK"
+echo ""
+echo ""
+PS3='Dear User Please Select The Service : '
+options=("Free Service" "Paid Service" "Contact Information" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Free Service")
+echo ""
+echo ""
+echo ""
+echo ""
+             echo -e " ${RED} You Have Choosen Free Service ${NC}"
+            echo -e "FREE SERVICE WILL GIVE YOU 1000 VIEWS PER DAY"
+            echo -e ""
+            echo -e ""
+            echo -e " ${RED} PLEASE COPY PASTE THIS LINK IN BROWSER TO SEND A MESSAGE ON WHATSAPP ${NC} - http://tiny.cc/bqtlcz"
+            ;;
+        "Paid Service")
+            echo "Coming on 15th Septemer"
+            ;;
+        "Contact Information")
+            echo "Will be updated on 15th september"
+            ;;
+        "Quit")
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
